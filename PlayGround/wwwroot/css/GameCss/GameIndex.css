@@ -1,0 +1,20 @@
+﻿
+.gItem{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: white;
+}
+
+.imgCon {
+    width: 512px;
+    height: 512px;
+}
+
+@media (min-width: 768px) {
+    .imgCon {
+        width: 200px;
+        height: 200px;
+        padding: 5%;
+    }
+}

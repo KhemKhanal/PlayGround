@@ -1,0 +1,105 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container p-5 bg-black text-white mt-5">
+
+    <div class="container d-flex justify-content-between">
+
+        <h4 class="text-start">Game</h4>
+        <h4 class="text-end">Score</h4>
+
+    </div>
+
+    <div class="d-grid gap-2 w-100 h-100">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-4 border align-content-center justify-content-center imgCon">
+                    <img class="box p-5 text-center w-100 bg-transparent" onmouseover="changeImage(this)" onmouseout="changeImageBack(this)" />
+                </div>
+
+                <div class="col-4 border align-content-center justify-content-center imgCon">
+                    <img class="box p-5 text-center w-100 bg-transparent" onmouseover="changeImage(this)" onmouseout="changeImageBack(this)" />
+                </div>
+
+                <div class="col-4 border align-content-center justify-content-center imgCon">
+                    <img class="box p-5 text-center w-100 bg-transparent" onmouseover="changeImage(this)" onmouseout="changeImageBack(this)" />
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-4 border align-content-center justify-content-center imgCon">
+                    <img class="box p-5 text-center w-100 bg-transparent" onmouseover="changeImage(this)" onmouseout="changeImageBack(this)"/>
+                </div>
+
+                <div class="col-4 border align-content-center justify-content-center imgCon">
+                    <img class="box p-5 text-center w-100 bg-transparent" onmouseover="changeImage(this)" onmouseout="changeImageBack(this)"/>
+                </div>
+
+                <div class="col-4 border align-content-center justify-content-center imgCon">
+                    <img class="box p-5 text-center w-100 bg-transparent" onmouseover="changeImage(this)" onmouseout="changeImageBack(this)"/>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-4 border align-content-center justify-content-center imgCon">
+                    <img class="box p-5 text-center w-100 bg-transparent" onmouseover="changeImage(this)" onmouseout="changeImageBack(this)"/>
+                </div>
+
+                <div class="col-4 border align-content-center justify-content-center imgCon">
+                    <img class="box p-5 text-center w-100 bg-transparent" onmouseover="changeImage(this)" onmouseout="changeImageBack(this)"/>
+                </div>
+
+                <div class="col-4 border align-content-center justify-content-center imgCon">
+                   <img class="box p-5 text-center w-100 bg-transparent" onmouseover="changeImage(this)" onmouseout="changeImageBack(this)"/>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script>
+
+            function GameStart(){
+                let x = "Images/cross.png";
+                let o = "Images/ooo.png";
+                let currentPlayer = "";
+
+            }
+
+            function changeColor(element) {
+                element.style.backgroundColor = "green";
+            }
+
+            function Hovering(){
+                changeImage()
+                changeImageBack()
+            }
+
+            //a function which changes image of an img tag when hovered over
+            function changeImage(element) {
+                    element.src = currentPlayer;
+            }
+
+            function changeImageBack(element) {
+                element.src = "";
+            }
+
+
+        </script>
+
+
+
+
+</div>
+
+<link rel="stylesheet" href="~/css/GameCss/GameIndex.css" />
+<script src="~/js/GameJs/Game.js"></script>
